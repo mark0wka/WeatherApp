@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="417.0" prefWidth="321.0" style="-fx-background-color: #4682B4;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaapp.FXMLController">
+   <children>
+      <AnchorPane prefHeight="134.0" prefWidth="330.0" style="-fx-background-color: White;">
+         <children>
+            <Text fill="STEELBLUE" layoutX="58.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Погодник">
+               <font>
+                  <Font name="Times New Roman Bold" size="48.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="city" layoutX="50.0" layoutY="146.0" promptText="Введите город" style="-fx-border-color: #4682B4; -fx-border-radius: 7px;">
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+      </TextField>
+      <Button fx:id="getData" layoutX="84.0" layoutY="189.0" mnemonicParsing="false" style="-fx-border-color: #4682B4; -fx-border-radius: 7px; -fx-background-color: #87CEFA;" text="Узнать погоду" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Text fx:id="temp_feels" fill="WHITE" layoutX="31.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ощущается:">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_max" fill="WHITE" layoutX="31.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Максимум:">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_min" fill="WHITE" layoutX="31.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Минимум:">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_pres" fill="WHITE" layoutX="31.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Давление:">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="outemp_info" fill="WHITE" layoutX="31.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="142.353515625">
+         <font>
+            <Font name="Times New Roman Bold" size="35.0" />
+         </font>
+      </Text>
+      <Text fx:id="outemp_feels" fill="WHITE" layoutX="163.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="outemp_max" fill="WHITE" layoutX="163.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="outemp_min" fill="WHITE" layoutX="163.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="outemp_pres" fill="WHITE" layoutX="163.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="image" fitHeight="93.0" fitWidth="105.0" layoutX="165.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
